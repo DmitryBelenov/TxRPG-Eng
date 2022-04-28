@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.GameApplicationController">
+   <children>
+      <TextArea fx:id="mainArea" editable="false" layoutX="9.0" layoutY="9.0" prefHeight="750.0" prefWidth="741.0" wrapText="true" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="274.0" AnchorPane.topAnchor="9.0">
+         <font>
+            <Font name="Candara" size="24.0" />
+         </font>
+      </TextArea>
+      <TextArea editable="false" layoutX="750.0" layoutY="226.0" prefHeight="386.0" prefWidth="263.0" wrapText="true">
+         <font>
+            <Font name="Candara" size="18.0" />
+         </font>
+      </TextArea>
+      <MenuButton alignment="CENTER" layoutX="750.0" layoutY="586.0" mnemonicParsing="false" popupSide="TOP" prefHeight="26.0" prefWidth="263.0" text="МЕНЮ">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Рюкзак" />
+          <MenuItem mnemonicParsing="false" text="Характеристики" />
+        </items>
+         <font>
+            <Font name="Candara" size="14.0" />
+         </font>
+      </MenuButton>
+      <Button fx:id="straight" layoutX="856.0" layoutY="644.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="50.0" text="^">
+         <font>
+            <Font name="Candara" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="right" layoutX="906.0" layoutY="690.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="50.0" text="&gt;">
+         <font>
+            <Font name="Candara" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="left" layoutX="806.0" layoutY="690.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="50.0" text="&lt;">
+         <font>
+            <Font name="Candara" size="24.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="compass" fitHeight="142.0" fitWidth="145.0" layoutX="811.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@old-compass.png" />
+         </image></ImageView>
+      <Label layoutX="793.0" layoutY="97.0" text="З" textFill="#1a5338">
+         <font>
+            <Font name="Candara" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="871.0" layoutY="177.0" text="Ю" textFill="#1a5338">
+         <font>
+            <Font name="Candara" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="956.0" layoutY="97.0" text="В" textFill="#1a5338">
+         <font>
+            <Font name="Candara" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="874.0" layoutY="14.0" text="С" textFill="#1a5338">
+         <font>
+            <Font name="Candara" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
