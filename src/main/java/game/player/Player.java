@@ -19,17 +19,17 @@ public class Player {
 
     public void step() {
         switch (this.viewDir) {
-            case NORTH -> {
-                if (x > 0) x -= 1; else x = 0;
-            }
             case WEST -> {
-                if (y > 0) y -= 1; else y = 0;
+                if (x > 0) x--; else x = 0;
             }
-            case SOUTH -> {
-                if (x < maxX -1) x += 1; else x = maxX - 1;
+            case NORTH -> {
+                if (y > 0) y--; else y = 0;
             }
             case EAST -> {
-                if (y < maxY - 1) y += 1; else y = maxY - 1;
+                if (x < maxX - 1) x++; else x = maxX - 1;
+            }
+            case SOUTH -> {
+                if (y < maxY - 1) y++; else y = maxY - 1;
             }
         }
     }
@@ -50,5 +50,13 @@ public class Player {
             case SOUTH -> this.viewDir = Direction.WEST;
             case WEST -> this.viewDir = Direction.NORTH;
         }
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
     }
 }
